@@ -95,7 +95,6 @@ function gimme(triplet) {
 }
 gimme([1, 2, 3]);
 
-
 //6 ---------------------------------------------------------------
 // Given a two dimensional array, return the co-ordinates of 'x'.
 // If 'x' is not inside the array, or if 'x' appears multiple times, return []
@@ -103,16 +102,23 @@ gimme([1, 2, 3]);
 // You should assume you will always get an array as input. The array will only contain 'x's and 'o's.
 
 const xMarksTheSpot = (input) => {
-  let coords = []
+  let coords = [];
   for (let i = 0; i < input.length; i++) {
     if (input[i].includes("x")) {
-      coords.push([i, input[i].indexOf("x")])
+      coords.push([i, input[i].indexOf("x")]);
     }
   }
   console.log(coords);
   if (coords.length === 1) {
-    return coords[0]
+    return coords[0];
   } else {
-    return []
+    return [];
   }
+};
+
+//7 ---------------------------------------------------------------
+// There is an array of strings. All strings contains similar letters except one. Try to find it!
+
+function findUniq(arr) {
+ 
 }
